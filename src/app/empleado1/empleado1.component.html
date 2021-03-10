@@ -1,0 +1,11 @@
+<p>Nombre del empleado: {{nombre}} </p>
+<p>Apellido del empleado: {{apellido}} </p>
+<p>Edad del empleado: {{getEdad()}} </p>
+<p>Empresa del empleado: {{edad1<18 ? "Menor de edad": "Mayor de edad"}} </p>
+<p>Empresa del empleado: {{empresa.value}} </p>
+
+<p>Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled]="HabilitacionCuadro"> </p> 
+{{TextoDeRegistro}} <br>
+<p>Registrado: <input type="radio" value="si" name="nRegistro" id="registro" [checked]="UsuarioRegistrado" (click)="SetUsuarioRegistrado($event)"> </p>
+<p>No registrado: <input type="radio" value="no" name="nRegistro" (click)="SetUsuarioRegistrado($event)" > </p>
+{{getRegistroUsuario()}}
